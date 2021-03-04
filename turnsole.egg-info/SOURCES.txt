@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+turnsole/__init__.py
+turnsole.egg-info/PKG-INFO
+turnsole.egg-info/SOURCES.txt
+turnsole.egg-info/dependency_links.txt
+turnsole.egg-info/top_level.txt
