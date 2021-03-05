@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: turnsole
-Version: 0.0.2
-Summary: A small example package
+Version: 0.0.4
+Summary: A series of convenience functions make your machine learning project easier
 Home-page: https://github.com/Antonio-hi/turnsole
 Author: Kui Lyu
 Author-email: 9428.al@gmail.com
