@@ -2,7 +2,7 @@
 # @Author        : Lyu Kui
 # @Email         : 9428.al@gmail.com
 # @Created Date  : 2021-02-24 13:58:46
-# @Last Modified : 2021-03-05 17:16:52
+# @Last Modified : 2021-03-05 18:14:17
 # @Description   :
 
 import tensorflow as tf
@@ -96,8 +96,8 @@ def load_backbone(phi, input_tensor, weights='imagenet'):
     skips = [model.get_layer(name).output for name in layer_names]
     return model, skips
 
-def dbnet(phi=0, input_size=(None, None, 3), weights='imagenet'):
-    image_input       = tf.keras.layers.Input(shape=input_size)
+def EasyDet(phi=0, input_size=(None, None, 3), weights='imagenet'):
+    image_input = tf.keras.layers.Input(shape=input_size)
 
     backbone, skips = load_backbone(phi=phi, input_tensor=image_input, weights=weights)
     C2, C3, C4, C5 = skips
@@ -129,7 +129,7 @@ def dbnet(phi=0, input_size=(None, None, 3), weights='imagenet'):
 
 
 if __name__ == '__main__':
-    model = dbnet(phi=0)
+    model = EasyDet(phi=0)
     model.summary()
 
     import time

@@ -2,13 +2,13 @@
 # @Author        : Lyu Kui
 # @Email         : 9428.al@gmail.com
 # @Created Date  : 2021-03-05 16:51:22
-# @Last Modified : 2021-03-05 16:51:57
+# @Last Modified : 2021-03-05 18:15:53
 # @Description   :
 
-from turnsole import model
+from turnsole.model import EasyDet
 
 if __name__ == '__main__':
-    model = model.dbnet(phi=0)
+    model = EasyDet(phi=0)
     model.summary()
 
     import time
