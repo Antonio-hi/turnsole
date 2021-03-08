@@ -3,6 +3,7 @@ pyproject.toml
 setup.cfg
 setup.py
 turnsole/__init__.py
+turnsole/convenience.py
 turnsole/model.py
 turnsole/paths.py
 turnsole.egg-info/PKG-INFO
